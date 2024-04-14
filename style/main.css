@@ -95,7 +95,7 @@ header{
 
 .information .about .fa-xmark{
   display: none;
-  color: black;
+  color: white;
   cursor: pointer;
   position: absolute;
   right: 20px;
@@ -706,7 +706,7 @@ from button:hover{
     display: block;
     padding-top: 50px;
     text-align: center;
-    background: white;
+    background: #08101E;
     transition: 1s ease;
   }
 
@@ -715,7 +715,7 @@ from button:hover{
   }
 
   .information .about a{
-    color: black;
+    color: white;
     display: inline-flex;
     margin: 20px 0;
     font-size: 1.2rem;
