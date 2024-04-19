@@ -471,7 +471,7 @@ from button:hover{
   border-radius: 10px;
   background-color: #0F1724;
   transition: 3s ease;
-  
+
 }
 
 .logo-icon nav:hover{
@@ -494,6 +494,7 @@ from button:hover{
   font-size: 15px;
   color: #B8BABE;
 }
+
 
 .entrystwo{
   margin-left: 10%;
@@ -563,7 +564,7 @@ from button:hover{
   color: white;
 }
 
-@media(min-width:768px) {
+@media screen and (min-width:1024px) {
   .form-popup{
     width: 90%;
   }
@@ -616,13 +617,23 @@ from button:hover{
     margin: 45px;
   } 
 
+  
   .logo-icon {
-    display: flex;
+    display: inline-flex;
+    text-align: center;
     width: 100%;
   }
 
   .logo-icon nav {
     margin:10px;
+  }
+
+  .logo-icon h5 {
+    font-size: 20px;
+  }
+
+  .logo-icon p {
+    font-size: 10px;
   }
 
   .entrythere{
@@ -657,14 +668,166 @@ from button:hover{
     font-size: 16px;
     color: #3A68B8;
   }
+}
+
+@media screen and (min-width:481px) and (max-width:1023px){
+  .from-box .from-details{
+    display: none;
+  }
+
+  .information .fa-bars{
+    margin-right: 5%;
+    display: flexbox;
+    left: auto;
+    color: white;
+    cursor: pointer;
+    font-size: 100%;
+  }
+
+  .information :is(.fa-xmark , .about .fa-bars){
+    display: block;
+  }
+
+  .information{
+    padding: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .information .logo img{
+    font-size: 100%;
+    display: flex;
+  }
   
-  
+  .information .about{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+    background: #08101E;
+    transition: 1s ease;
+  }
+
+  .information .about.show-menu{
+    left: 0;
+  }
+
+  .information .about a{
+    color: white;
+    display: inline-flex;
+    margin: 20px 0;
+    font-size: 1.2rem;
+  }
+
+  .information .login{
+    font-size: 100%;
+    padding: 7px 10px;
+  }
+
+  .entrys{
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex;
+  }
+  .entrys div {
+    display: block;
+    width: 100%;
+  }
+  .entry h6{
+    font-size: 20px;
+  }
+
+  .entry h1{
+    font-size: 30px;
+  }
+
+  .entry h5{
+    font-size: 8px;
+  }
+
+  .entry .getstarted{
+    font-size: 12px;
+  }
+  .entry .watchvideo{
+    font-size: 12px;
+  }
+
+  .entrys div img{
+    margin: 45px;
+  } 
+
+  .company-logo{
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+  .company-logo div img{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 100px;
+    width: 150px;
+  }
+
+
+  .entrystwo{
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex;
+
+  }
+
+  .entrystwo div {
+    display: block;
+    width: 100%;
+  }
+
+  .entrystwo div img{
+    width: 280px;
+    margin-top: 150px;
+  } 
+
+  .entrytwo h1{
+    font-size: 25px;
+  }
+
+  .entrytwo h5{
+    font-size: 10px;
+  }
+
+  .logo-icon nav {
+    margin-top:10px;
+  }
+
+  .entrysthere{
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex;
+  }
+  .entrysthere div {
+    display: block;
+    width: 100%;
+  }
+
+  .entrythere h1{
+    font-size: 22px;
+  }
+
+  .entrythere p{
+    font-size: 10px;
+  }
+
+  .entrysthere div img{
+    margin: 45px;
+  } 
 }
 
 
-
-
-@media(max-width:992px){
+@media screen and (min-width:320px) and (max-width:480px){
   .from-box .from-details{
     display: none;
   }
@@ -746,8 +909,6 @@ from button:hover{
     font-size: 12px;
   }
 
-
-
   .company-logo div{
     margin-bottom: 100px;
 
@@ -764,10 +925,14 @@ from button:hover{
   }
   .textstwo h1{
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 22px;
   }
   .textstwo h5{
-    font-size: 12px;
+    font-size: 10px;
+  }
+
+  .logo-icon nav {
+    margin:10px;
   }
 
   .entrythere-img img{
@@ -775,10 +940,10 @@ from button:hover{
   }
   .textsthere h1{
     margin-top: 100px;
-    font-size: 25px;
+    font-size: 22px;
   }
   .textsthere p{
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
